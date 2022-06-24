@@ -28,7 +28,7 @@ def index(request):
 
 
 def movie(request, id):
-    return HttpResponse('Hi')
+    return render(request, 'index/movie.html', {})
 
 
 def fill_db():
