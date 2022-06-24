@@ -7,7 +7,6 @@ class Movie(models.Model):
         max_length = 255,
         name = 'title',
         help_text = 'Title of the movie',
-        primary_key = True
     )
 
     imdb_rating = models.CharField(
