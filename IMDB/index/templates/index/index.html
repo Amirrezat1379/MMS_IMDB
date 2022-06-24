@@ -14,14 +14,15 @@
     </head>
 
     <body>
+
         <header class="IMDB_header">
             <div>
-                <img class="IMDB_header--menu" src="../../static/movies/images/menu.svg" alt="">
-                <img class="IMDB_header--logo" src="../../static/movies/images/IMDB_Logo_2016.svg" alt="Logo">
+                <img class="IMDB_header--menu" src="../../static/index/images/menu.svg" alt="">
+                <img class="IMDB_header--logo" src="../../static/index/images/IMDB_Logo_2016.svg" alt="Logo">
             </div>
             <div class="IMDB_header--search">
                 <button class="btn IMDB_header--search_button">
-                    <img src="../../static/movies/images/search.svg" alt="">
+                    <img src="../../static/index/images/search.svg" alt="">
                 </button>
                 <input
                   type="text"
@@ -29,54 +30,23 @@
                   placeholder="Search what the fuck you need :)"
                 />
               </div>
-              <button class="btn btn IMDB_header--sign_in_button">sing in</button>
+              <button class="btn btn IMDB_header--sign_in_button">sign in</button>
         </header>
+
         <main class="IMDB_main">
             <section class="IMDB_main--films">
+
+                {% for movie in movies %}
                 <figure class="IMDB_main--films--item">
-                    <img src="../../static/movies/images/TomAndJerry.jpg" alt="">
-                    <figcaption class="IMDB_main--films--caption">
-                        <h3>Tom and Jerry</h3>
-                        khorsandi = definition of the motherfucker
-                    </figcaption>
+                    <a href={% url 'movie' id=movie.id %}>
+                        <img src="'../../static/index/images/posters/{{ movie.title }}.jpg" alt="" class="glow">
+                    </a>
                 </figure>
-                <figure class="IMDB_main--films--item">
-                    <img src="../../static/movies/images/plots/The Godfather.jpg" alt="">
-                    <figcaption class="IMDB_main--films--caption">
-                        <h3>Tom and Jerry</h3>
-                        khorsandi = definition of the motherfucker
-                    </figcaption>
-                </figure>
-                <figure class="IMDB_main--films--item">
-                    <img src="../../static/movies/images/plots/The Godfather Part II.jpg" alt="">
-                    <figcaption class="IMDB_main--films--caption">
-                        <h3>Tom and Jerry</h3>
-                        khorsandi = definition of the motherfucker
-                    </figcaption>
-                </figure>
-                <figure class="IMDB_main--films--item">
-                    <img src="../../static/movies/images/plots/The Shawshank Redemption.jpg" alt="">
-                    <figcaption class="IMDB_main--films--caption">
-                        <h3>Tom and Jerry</h3>
-                        khorsandi = definition of the motherfucker
-                    </figcaption>
-                </figure>
-                <figure class="IMDB_main--films--item">
-                    <img src="../../static/movies/images/plots/12 Angry Men.jpg" alt="">
-                    <figcaption class="IMDB_main--films--caption">
-                        <h3>Tom and Jerry</h3>
-                        khorsandi = definition of the motherfucker
-                    </figcaption>
-                </figure>
-                <figure class="IMDB_main--films--item">
-                    <img src="../../static/movies/images/plots/The Dark Knight.jpg" alt="">
-                    <figcaption class="IMDB_main--films--caption">
-                        <h3>Tom and Jerry</h3>
-                        khorsandi = definition of the motherfucker
-                    </figcaption>
-                </figure>
+                {% endfor %}
             </section>
         </main>
+
         <footer></footer>
+
     </body>
 </html>
