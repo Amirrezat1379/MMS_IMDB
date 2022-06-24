@@ -18,11 +18,18 @@ MOVIE_TITLES = [
 
 def index(request):
 
+    # In case no data is already available, insert them
+    if len(Movie.objects.all()) == 0:
+        fill_db()
 
-    return render(request, 'movies/index.html', {})
+
+    return render(request, 'movies/index.html', context = {
+            'movies': Movie.objects.all()
+        }
+    )
 
 
-def scraper():
+def fill_db():
     
     load_dotenv()   # take environment variables from .env
 
@@ -45,7 +52,7 @@ def scraper():
             plot = info['Plot'],
             director = info['Director'],
             writer = info['Writer'],
-            actor = info['Actors'],
+            actors = info['Actors'],
             language = info['Language'],
             poster_url = info['Poster'],
             runtime = info['Runtime'],
@@ -53,4 +60,4 @@ def scraper():
             released = info['Released'],
             country = info['Country'],
             box_office = info['BoxOffice'],
-        )
+        ).save()
