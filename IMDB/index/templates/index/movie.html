@@ -1,0 +1,41 @@
+{% load static %}
+
+<DOCTYPE HTML>
+
+<html>
+    <head>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}">
+        <script src="{% static 'index/js/script.js' %}"></script>
+    </head>
+
+    <body>
+
+        <header class="IMDB_header">
+            <div>
+                <img class="IMDB_header--menu" src="../../static/index/images/menu.svg" alt="">
+                <img class="IMDB_header--logo" src="../../static/index/images/IMDB_Logo_2016.svg" alt="Logo">
+            </div>
+            <div class="IMDB_header--search">
+                <button class="btn IMDB_header--search_button">
+                    <img src="../../static/index/images/search.svg" alt="">
+                </button>
+                <input
+                  type="text"
+                  class="IMDB_header--search--input"
+                  placeholder="Search what the fuck you need :)"
+                />
+              </div>
+              <button class="btn btn IMDB_header--sign_in_button">sign in</button>
+        </header>
+
+        <video width="530" height="440" controls autoplay style="margin:auto">
+            <source src="{% static "index/videos/The Godfather.mp4" %}" type="video/mp4"> </source>
+        </video>
+    </body>
+</html>

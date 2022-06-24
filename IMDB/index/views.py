@@ -1,4 +1,5 @@
 import os
+from django.http import HttpResponse
 import requests
 from dotenv import load_dotenv
 from django.shortcuts import render
@@ -22,11 +23,12 @@ def index(request):
     if len(Movie.objects.all()) == 0:
         fill_db()
 
+    context = {'movies': Movie.objects.all()}
+    return render(request, 'index/index.html', context)
 
-    return render(request, 'index/index.html', context = {
-            'movies': Movie.objects.all()
-        }
-    )
+
+def movie(request, id):
+    return render(request, 'index/movie.html', {})
 
 
 def fill_db():
