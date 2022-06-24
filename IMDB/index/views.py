@@ -23,7 +23,7 @@ def index(request):
         fill_db()
 
 
-    return render(request, 'movies/index.html', context = {
+    return render(request, 'index/index.html', context = {
             'movies': Movie.objects.all()
         }
     )
