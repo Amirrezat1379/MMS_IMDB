@@ -1,11 +1,11 @@
 body {
-    background-color: white;
+    background-color: #000;
 }
 
 .IMDB_header {
     /* height: 30px; */
     background-color: #181818;
-    padding: 15px 30px;
+    padding: 15px 45px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -15,10 +15,7 @@ body {
 
 .IMDB_header--logo {
     height: 30px;
-}
-
-.IMDB_header--logo {
-    fill: #fff;
+    margin-left: 10px;
 }
 
 .IMDB_header--search {
@@ -55,10 +52,30 @@ body {
     outline: 0;
 }
 
-@media screen and (max-width: 960px) {
-    .IMDB_header--search--input {
-        width: 20ch; 
-    }
+.IMDB_main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 45px;
+    background-color: #000;
+}
+
+.IMDB_main--films--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px 0;
+    color : #fff;
+}
+
+.IMDB_main--films--caption h3 {
+    font-weight: bold;
+    color: rgb(245, 197, 24);
+}
+
+.IMDB_main--films--item img {
+    height: 450px;
+    width: 300px;
+    margin-right: 25px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -68,6 +85,9 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+    .IMDB_header--search--input {
+        width: 20ch; 
+    }
     .IMDB_header--search {
         margin: 0;
         grid-row: 2;
