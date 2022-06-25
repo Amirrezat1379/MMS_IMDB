@@ -10,32 +10,58 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
         crossorigin="anonymous"
         />
-        <link rel="stylesheet" type="text/css" href="{% static 'index/css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'index/css/movieStyle.css' %}">
         <script src="{% static 'index/js/script.js' %}"></script>
     </head>
 
     <body>
-
-        <header class="IMDB_header">
-            <div>
-                <img class="IMDB_header--menu" src="../../static/index/images/menu.svg" alt="">
-                <img class="IMDB_header--logo" src="../../static/index/images/IMDB_Logo_2016.svg" alt="Logo">
+        <header class="movie_header">
+            <div class="movie_header--access">
+                <img class="movie_header--menu" src="../../static/index/images/menu.svg" alt="">
+                <img class="movie_header--logo" src="../../static/index/images/IMDB_Logo_2016.svg" alt="Logo">
             </div>
-            <div class="IMDB_header--search">
-                <button class="btn IMDB_header--search_button">
+            <div class="movie_header--search">
+                <button class="btn movie_header--search_button">
                     <img src="../../static/index/images/search.svg" alt="">
                 </button>
                 <input
                   type="text"
-                  class="IMDB_header--search--input"
-                  placeholder="Search what the fuck you need :)"
+                  class="movie_header--search--input"
+                  placeholder="Search what the fuck you whant :)"
                 />
               </div>
-              <button class="btn btn IMDB_header--sign_in_button">sign in</button>
+              <button class="btn btn movie_header--sign_in_button">sign in</button>
         </header>
-
-        <video width="530" height="440" controls autoplay style="margin:auto">
-            <source src="{% static "index/videos/The Godfather.mp4" %}" type="video/mp4"> </source>
-        </video>
+        <main class="movie_main">
+            <section class="movie_main--video">
+                <video width="auto" controls autoplay>
+                    <source src="{% static "index/videos/The Godfather.mp4" %}" type="video/mp4"> </source>
+                </video>
+                <div class="movie_main--make">
+                    <!-- <h2>Movie Name</h2> -->
+                    <h1>The Dogfather</h1>
+                    <h2 class="movie_main--director--header">Produced by</h2>
+                    <p class="movie_main--director--caption">Mohammadreza Meybodi :)</p>
+                    <h2 class="movie_main--cast--header">Cast</h2>
+                    <p class="movie_main--cast--caption">Keivoon Icpi, Amirreza Tarabkhah, Siavash khorsandi, Reza Safabakhsh :/</p>
+                    <h2>Point</h2>
+                    <h3>9.3/10</h3>
+                </div>
+            </section>
+            <section class="movie_main--Summary">
+                <img src="../../static/index/images/posters/The Godfather.jpg" alt="The Dogfather">
+                <p class="movie_main--Summary--text">
+                    From surprising improvisations to exercise routines on par with '80s action stars, it's never a dull day working on "The Umbrella Academy." Castmates Tom Hopper, David Castañeda, Emmy Raver-Lampman, Robert Sheehan, Aidan Gallagher, Justin H. Min, and Ritu Arya discuss what it's like collaborating with their favorite fictional family members.
+                </p>
+                <div class="movie_main--Summary--award">
+                    <h2>Awards</h2>
+                    <p>Best milf f*ck, European Film Awards, New York Film Critics Circle Awards, ...</p>
+                    <h2>Realese date</h2>
+                    <p>1111/11/11</p>
+                    <h2>Film Editing by</h2>
+                    <p>Soton Babak Sadeghian</p>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

@@ -87,6 +87,20 @@
     }
 }
 
+@media screen and (max-width: 1248px) {
+    .IMDB_header--search--input {
+        width: 45ch;
+    }
+
+    .IMDB_header--access {
+        margin-left: 70px;
+    }
+
+    .IMDB_header--sign_in_button {
+        margin-right: 70px;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .IMDB_header--search--input {
         width: 20ch; 
