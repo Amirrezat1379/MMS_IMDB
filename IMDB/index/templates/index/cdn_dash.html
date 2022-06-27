@@ -64,7 +64,11 @@
 
             <script>
                 (function(){
+                    {% if movie.id == 4 %}
+                    var url = "https://keivanipchihagh.arvanvod.com/7Wd1RQN2zZ/pqQdGBle74/h_,144_200,240_243,k.mp4.list/manifest.mpd";
+                    {% else %}
                     var url = "https://keivanipchihagh.arvanvod.com/7Wd1RQN2zZ/nWVOLZMZx2/h_,108_200,180_400,272_545,362_545,k.mp4.list/manifest.mpd";
+                    {% endif %}
                     var player = dashjs.MediaPlayer().create();
                     player.initialize(document.querySelector("#videoPlayer"), url, true);
                 })();

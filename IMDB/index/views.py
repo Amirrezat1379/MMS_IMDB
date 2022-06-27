@@ -29,6 +29,8 @@ def index(request):
 def movie(request, id):
     context = {'movie': Movie.objects.get(id = id)}
 
+    # return render(request, 'index/test.html', context)
+
     if id in [1, 2]:
         return render(request, 'index/local_dash.html', context)
     elif id in [3, 4]:
