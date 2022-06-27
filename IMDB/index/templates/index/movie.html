@@ -14,7 +14,7 @@
         <script src="{% static 'index/js/script.js' %}"></script>
     </head>
 
-    <body>
+    <body>        
         <header class="movie_header">
             <div class="movie_header--access">
                 <img class="movie_header--menu" src="../../static/index/images/menu.svg" alt="">
@@ -32,34 +32,32 @@
               </div>
               <button class="btn btn movie_header--sign_in_button">sign in</button>
         </header>
-        <main class="movie_main">
+        <main class="movie_main">            
             <section class="movie_main--video">
                 <video width="auto" controls autoplay>
-                    <source src="{% static "index/videos/The Godfather.mp4" %}" type="video/mp4"> </source>
+                    <source src="../../static/index/videos/{{ movie.title }}.mp4" type="video/mp4"> </source>
                 </video>
                 <div class="movie_main--make">
                     <!-- <h2>Movie Name</h2> -->
-                    <h1>The Dogfather</h1>
+                    <h1>{{ movie.title }}</h1>
                     <h2 class="movie_main--director--header">Produced by</h2>
-                    <p class="movie_main--director--caption">Mohammadreza Meybodi :)</p>
+                    <p class="movie_main--director--caption">{{ movie.director }}</p>
                     <h2 class="movie_main--cast--header">Cast</h2>
-                    <p class="movie_main--cast--caption">Keivoon Icpi, Amirreza Tarabkhah, Siavash khorsandi, Reza Safabakhsh :/</p>
-                    <h2>Point</h2>
-                    <h3>9.3/10</h3>
+                    <p class="movie_main--cast--caption">{{ movie.actors }}</p>
+                    <h2>IMDB</h2>
+                    <h3>{{ movie.imdb_rating }}</h3>
                 </div>
             </section>
             <section class="movie_main--Summary">
-                <img src="../../static/index/images/posters/The Godfather.jpg" alt="The Dogfather">
-                <p class="movie_main--Summary--text">
-                    From surprising improvisations to exercise routines on par with '80s action stars, it's never a dull day working on "The Umbrella Academy." Castmates Tom Hopper, David Castañeda, Emmy Raver-Lampman, Robert Sheehan, Aidan Gallagher, Justin H. Min, and Ritu Arya discuss what it's like collaborating with their favorite fictional family members.
-                </p>
+                <img src="../../static/index/images/posters/{{ movie.title }}.jpg" alt="The Dogfather">
+                <p class="movie_main--Summary--text">{{ movie.plot }}</p>
                 <div class="movie_main--Summary--award">
-                    <h2>Awards</h2>
-                    <p>Best milf f*ck, European Film Awards, New York Film Critics Circle Awards, ...</p>
+                    <h2>Language</h2>
+                    <p>{{ movie.language}}</p>
                     <h2>Realese date</h2>
-                    <p>1111/11/11</p>
-                    <h2>Film Editing by</h2>
-                    <p>Soton Babak Sadeghian</p>
+                    <p>{{ movie.released }}</p>
+                    <h2>Box Office</h2>
+                    <p>{{ movie.box_office }}</p>
                 </div>
             </section>
         </main>

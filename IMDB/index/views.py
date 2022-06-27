@@ -28,7 +28,8 @@ def index(request):
 
 
 def movie(request, id):
-    return render(request, 'index/movie.html', {})
+    context = {'movie': Movie.objects.get(id = id)}
+    return render(request, 'index/movie.html', context)
 
 
 def fill_db():
