@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile_backend
+    container_name: backend
+    ports:
+      - "7000:7000"
+  nginx:
+    build: 
+      context: .
+      dockerfile: Dockerfile_nginx
+    ports:
+      - "3000:3000"

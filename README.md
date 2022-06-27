@@ -28,3 +28,7 @@ python3 manage.py migrate
 ```bash
 python3 manage.py runserver
 ```
+6. To run the project in Docker:
+```bash
+docker-compose up -d --build
+```
