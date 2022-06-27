@@ -36,7 +36,7 @@
         </header>
         <main class="movie_main">            
             <section class="movie_main--video">
-                <video id="video"></video>
+                <video id="video" controls></video>
                 <div class="movie_main--make">
                     <!-- <h2>Movie Name</h2> -->
                     <h1>{{ movie.title }}</h1>
@@ -70,18 +70,25 @@
                 {% else %}
                 var videoSrc = "https://keivanipchihagh.arvanvod.com/7Wd1RQN2zZ/mQB9KY05kl/h_,144_200,240_400,360_470,k.mp4.list/master.m3u8";
                 {% endif %}
-                //
-                // First check for native browser HLS support
-                //
-                if (video.canPlayType('application/vnd.apple.mpegurl')) {
-                  video.src = videoSrc;
-                  //
-                  // If no native HLS support, check if HLS.js is supported
-                  //
-                } else if (Hls.isSupported()) {
-                  var hls = new Hls();
+                if (Hls.isSupported()) {
+                  var hls = new Hls({
+                    debug: true,
+                  });
                   hls.loadSource(videoSrc);
                   hls.attachMedia(video);
+                  hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                    video.muted = true;
+                    video.play();
+                  });
+                }
+                // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+                // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element through the `src` property.
+                // This is using the built-in support of the plain video element, without using hls.js.
+                else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                  video.src = videoSrc;
+                  video.addEventListener('canplay', function () {
+                    video.play();
+                  });
                 }
               </script>
               
