@@ -49,7 +49,7 @@
                 </div>
             </section>
             <section class="movie_main--Summary">
-                <img src="../../static/index/images/posters/{{ movie.title }}.jpg" alt="The Dogfather">
+                <img src="../../static/index/images/posters/{{ movie.title }}.jpg" alt="{{ movie.title }}">
                 <p class="movie_main--Summary--text">{{ movie.plot }}</p>
                 <div class="movie_main--Summary--award">
                     <h2>Language</h2>
@@ -58,6 +58,8 @@
                     <p>{{ movie.released }}</p>
                     <h2>Box Office</h2>
                     <p>{{ movie.box_office }}</p>
+                    <h2>Genre</h2>
+                    <p>{{ movie.genre }}</p>
                 </div>
             </section>
         </main>
