@@ -34,9 +34,17 @@
         </header>
         <main class="movie_main">            
             <section class="movie_main--video">
-                <video width="auto" controls autoplay>
-                    <source src="../../static/index/videos/{{ movie.title }}.mp4" type="video/mp4"> </source>
-                </video>
+                <div>
+                    <video id="videoPlayer" controls></video>
+                </div>
+                <script src="http://cdn.dashjs.org/latest/dash.all.min.js"></script>
+                <script>
+                    (function(){
+                        var url = "./../static/index/0/The Shawshank Redemption.mpd";
+                        var player = dashjs.MediaPlayer().create();
+                        player.initialize(document.querySelector("#videoPlayer"), url, true);
+                    })();
+                </script>
                 <div class="movie_main--make">
                     <!-- <h2>Movie Name</h2> -->
                     <h1>{{ movie.title }}</h1>
