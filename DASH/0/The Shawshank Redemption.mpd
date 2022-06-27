@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT2M40.6S"
+	minBufferTime="PT10.9S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<Period id="0" start="PT0.0S">
+		<AdaptationSet id="0" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.64001f" bandwidth="635000" width="1280" height="720" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="159159" />
+						<S d="146146" />
+						<S d="137137" />
+						<S d="250250" />
+						<S d="204204" />
+						<S d="140140" />
+						<S d="174174" />
+						<S d="150150" />
+						<S d="256256" />
+						<S d="123123" />
+						<S d="201201" />
+						<S d="127127" />
+						<S d="137137" />
+						<S d="363363" />
+						<S d="131131" />
+						<S d="281281" />
+						<S d="250250" r="2" />
+						<S d="123123" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="123000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="290816" />
+						<S d="269312" />
+						<S d="251904" />
+						<S d="424960" />
+						<S d="409600" />
+						<S d="258048" />
+						<S d="319488" />
+						<S d="274432" />
+						<S d="472064" />
+						<S d="226304" />
+						<S d="369664" />
+						<S d="234496" />
+						<S d="251904" />
+						<S d="393216" />
+						<S d="436224" />
+						<S d="457728" />
+						<S d="417792" />
+						<S d="293888" />
+						<S d="459776" />
+						<S d="399360" />
+						<S d="175104" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="2" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="2" mimeType="video/mp4" codecs="avc1.64001e" bandwidth="318000" width="854" height="480" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="159159" />
+						<S d="146146" />
+						<S d="137137" />
+						<S d="250250" />
+						<S d="204204" />
+						<S d="140140" />
+						<S d="174174" />
+						<S d="150150" />
+						<S d="256256" />
+						<S d="123123" />
+						<S d="201201" />
+						<S d="127127" />
+						<S d="137137" />
+						<S d="363363" />
+						<S d="131131" />
+						<S d="281281" />
+						<S d="157157" />
+						<S d="250250" r="1" />
+						<S d="216216" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="3" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="3" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="290816" />
+						<S d="269312" />
+						<S d="251904" />
+						<S d="424960" />
+						<S d="409600" />
+						<S d="258048" />
+						<S d="319488" />
+						<S d="274432" />
+						<S d="472064" />
+						<S d="226304" />
+						<S d="369664" />
+						<S d="234496" />
+						<S d="251904" />
+						<S d="393216" />
+						<S d="436224" />
+						<S d="457728" />
+						<S d="417792" />
+						<S d="293888" />
+						<S d="459776" />
+						<S d="399360" />
+						<S d="175104" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="4" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="4" mimeType="video/mp4" codecs="avc1.64001e" bandwidth="254000" width="640" height="360" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="159159" />
+						<S d="146146" />
+						<S d="137137" />
+						<S d="250250" />
+						<S d="204204" />
+						<S d="140140" />
+						<S d="174174" />
+						<S d="149149" />
+						<S d="257257" />
+						<S d="123123" />
+						<S d="201201" />
+						<S d="127127" />
+						<S d="137137" />
+						<S d="363363" />
+						<S d="131131" />
+						<S d="281281" />
+						<S d="155155" />
+						<S d="250250" r="1" />
+						<S d="131131" />
+						<S d="87087" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="5" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="5" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="290816" />
+						<S d="269312" />
+						<S d="251904" />
+						<S d="424960" />
+						<S d="409600" />
+						<S d="258048" />
+						<S d="319488" />
+						<S d="274432" />
+						<S d="472064" />
+						<S d="226304" />
+						<S d="369664" />
+						<S d="234496" />
+						<S d="251904" />
+						<S d="393216" />
+						<S d="436224" />
+						<S d="457728" />
+						<S d="417792" />
+						<S d="293888" />
+						<S d="459776" />
+						<S d="399360" />
+						<S d="175104" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="6" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="6" mimeType="video/mp4" codecs="avc1.640015" bandwidth="212000" width="426" height="240" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="159159" />
+						<S d="146146" />
+						<S d="137137" />
+						<S d="231231" />
+						<S d="223223" />
+						<S d="140140" />
+						<S d="174174" />
+						<S d="149149" />
+						<S d="257257" />
+						<S d="123123" />
+						<S d="201201" />
+						<S d="127127" />
+						<S d="137137" />
+						<S d="214214" />
+						<S d="237237" />
+						<S d="266266" />
+						<S d="210210" />
+						<S d="250250" r="1" />
+						<S d="127127" />
+						<S d="94094" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="7" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="7" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="290816" />
+						<S d="269312" />
+						<S d="251904" />
+						<S d="424960" />
+						<S d="409600" />
+						<S d="258048" />
+						<S d="319488" />
+						<S d="274432" />
+						<S d="472064" />
+						<S d="226304" />
+						<S d="369664" />
+						<S d="234496" />
+						<S d="251904" />
+						<S d="393216" />
+						<S d="436224" />
+						<S d="457728" />
+						<S d="417792" />
+						<S d="293888" />
+						<S d="459776" />
+						<S d="399360" />
+						<S d="175104" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="8" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="8" mimeType="video/mp4" codecs="avc1.64000c" bandwidth="182000" width="256" height="144" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="159159" />
+						<S d="146146" />
+						<S d="137137" />
+						<S d="232232" />
+						<S d="222222" />
+						<S d="182182" />
+						<S d="132132" />
+						<S d="149149" />
+						<S d="257257" />
+						<S d="123123" />
+						<S d="201201" />
+						<S d="127127" />
+						<S d="137137" />
+						<S d="214214" />
+						<S d="237237" />
+						<S d="249249" />
+						<S d="230230" />
+						<S d="157157" />
+						<S d="250250" />
+						<S d="217217" />
+						<S d="94094" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="9" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="9" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Shawshank Redemption_init_$RepresentationID$.m4s" media="The Shawshank Redemption_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="290816" />
+						<S d="269312" />
+						<S d="251904" />
+						<S d="424960" />
+						<S d="409600" />
+						<S d="258048" />
+						<S d="319488" />
+						<S d="274432" />
+						<S d="472064" />
+						<S d="226304" />
+						<S d="369664" />
+						<S d="234496" />
+						<S d="251904" />
+						<S d="393216" />
+						<S d="436224" />
+						<S d="457728" />
+						<S d="417792" />
+						<S d="293888" />
+						<S d="459776" />
+						<S d="399360" />
+						<S d="175104" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>

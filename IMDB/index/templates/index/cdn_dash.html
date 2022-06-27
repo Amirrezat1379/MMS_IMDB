@@ -1,0 +1,74 @@
+{% load static %}
+
+<DOCTYPE HTML>
+
+<html>
+    <head>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="{% static 'index/css/movieStyle.css' %}">
+        <script src="{% static 'index/js/script.js' %}"></script>
+        <script src="http://cdn.dashjs.org/latest/dash.all.min.js"></script>
+    </head>
+
+    <body>        
+        <header class="movie_header">
+            <div class="movie_header--access">
+                <img class="movie_header--menu" src="../../static/index/images/menu.svg" alt="">
+                <img class="movie_header--logo" src="../../static/index/images/IMDB_Logo_2016.svg" alt="Logo">
+            </div>
+            <div class="movie_header--search">
+                <button class="btn movie_header--search_button">
+                    <img src="../../static/index/images/search.svg" alt="">
+                </button>
+                <input
+                  type="text"
+                  class="movie_header--search--input"
+                  placeholder="Search what the fuck you whant :)"
+                />
+              </div>
+              <button class="btn btn movie_header--sign_in_button">sign in</button>
+        </header>
+        <main class="movie_main">            
+            <section class="movie_main--video">
+                <video id="videoPlayer" controls></video>
+                <div class="movie_main--make">
+                    <!-- <h2>Movie Name</h2> -->
+                    <h1>{{ movie.title }}</h1>
+                    <h2 class="movie_main--director--header">Produced by</h2>
+                    <p class="movie_main--director--caption">{{ movie.director }}</p>
+                    <h2 class="movie_main--cast--header">Cast</h2>
+                    <p class="movie_main--cast--caption">{{ movie.actors }}</p>
+                    <h2>IMDB</h2>
+                    <h3>{{ movie.imdb_rating }}</h3>
+                </div>
+            </section>
+            <section class="movie_main--Summary">
+                <img src="../../static/index/images/posters/{{ movie.title }}.jpg" alt="{{ movie.title }}">
+                <p class="movie_main--Summary--text">{{ movie.plot }}</p>
+                <div class="movie_main--Summary--award">
+                    <h2>Language</h2>
+                    <p>{{ movie.language}}</p>
+                    <h2>Realese date</h2>
+                    <p>{{ movie.released }}</p>
+                    <h2>Box Office</h2>
+                    <p>{{ movie.box_office }}</p>
+                    <h2>Genre</h2>
+                    <p>{{ movie.genre }}</p>
+                </div>
+            </section>
+
+            <script>
+                (function(){
+                    var url = "https://keivanipchihagh.arvanvod.com/7Wd1RQN2zZ/nWVOLZMZx2/h_,108_200,180_400,272_545,362_545,k.mp4.list/manifest.mpd";
+                    var player = dashjs.MediaPlayer().create();
+                    player.initialize(document.querySelector("#videoPlayer"), url, true);
+                })();
+            </script>
+        </main>
+    </body>
+</html>

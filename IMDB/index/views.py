@@ -1,5 +1,4 @@
 import os
-from django.http import HttpResponse
 import requests
 from dotenv import load_dotenv
 from django.shortcuts import render
@@ -29,7 +28,13 @@ def index(request):
 
 def movie(request, id):
     context = {'movie': Movie.objects.get(id = id)}
-    return render(request, 'index/movie.html', context)
+
+    if id in [1, 2]:
+        return render(request, 'index/local_dash.html', context)
+    elif id in [3, 4]:
+        return render(request, 'index/cdn_dash.html', context)
+    else:
+        return render(request, 'index/cdn_hls.html', context)
 
 
 def fill_db():

@@ -32,3 +32,13 @@ python3 manage.py runserver
 ```bash
 docker-compose up -d --build
 ```
+7. Move each video generated from the script into nginx:
+```bash
+docker exec {container_id} mkdir -p /tmp/dash/
+docker cp /home/keivanipchihagh/GitHub/MMS_IMDB/DASH/{movie_id} mms_imdb_nginx_1:/tmp/dash/{movie_id}
+
+```
+8. To access the files in the nginx server:
+```bash
+docker exec -it mms_imdb_nginx_1 /bin/sh
+```
