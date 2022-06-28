@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:mpeg:dash:schema:mpd:2011"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:schemaLocation="urn:mpeg:DASH:schema:MPD:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd"
+	profiles="urn:mpeg:dash:profile:isoff-live:2011"
+	type="static"
+	mediaPresentationDuration="PT2M0.1S"
+	minBufferTime="PT14.8S">
+	<ProgramInformation>
+	</ProgramInformation>
+	<Period id="0" start="PT0.0S">
+		<AdaptationSet id="0" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="0" mimeType="video/mp4" codecs="avc1.64001f" bandwidth="547000" width="1280" height="720" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="144144" />
+						<S d="174174" />
+						<S d="166166" />
+						<S d="178178" />
+						<S d="162162" />
+						<S d="163163" />
+						<S d="144144" />
+						<S d="140140" />
+						<S d="164164" />
+						<S d="170170" />
+						<S d="152152" />
+						<S d="124124" />
+						<S d="174174" />
+						<S d="156156" />
+						<S d="152152" />
+						<S d="187187" />
+						<S d="178178" />
+						<S d="152152" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="1" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="125000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="263168" />
+						<S d="320512" />
+						<S d="292864" />
+						<S d="227328" />
+						<S d="228352" />
+						<S d="327680" />
+						<S d="254976" />
+						<S d="223232" />
+						<S d="326656" />
+						<S d="263168" />
+						<S d="221184" />
+						<S d="281600" />
+						<S d="227328" />
+						<S d="315392" />
+						<S d="291840" />
+						<S d="274432" />
+						<S d="349184" />
+						<S d="327680" />
+						<S d="281600" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="2" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="2" mimeType="video/mp4" codecs="avc1.64001e" bandwidth="273000" width="854" height="480" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="144144" />
+						<S d="174174" />
+						<S d="166166" />
+						<S d="178178" />
+						<S d="162162" />
+						<S d="163163" />
+						<S d="144144" />
+						<S d="140140" />
+						<S d="164164" />
+						<S d="170170" />
+						<S d="152152" />
+						<S d="127127" />
+						<S d="203203" />
+						<S d="124124" />
+						<S d="152152" />
+						<S d="187187" />
+						<S d="178178" />
+						<S d="152152" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="3" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="3" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="263168" />
+						<S d="320512" />
+						<S d="292864" />
+						<S d="227328" />
+						<S d="228352" />
+						<S d="327680" />
+						<S d="254976" />
+						<S d="223232" />
+						<S d="326656" />
+						<S d="263168" />
+						<S d="221184" />
+						<S d="281600" />
+						<S d="227328" />
+						<S d="315392" />
+						<S d="291840" />
+						<S d="274432" />
+						<S d="349184" />
+						<S d="327680" />
+						<S d="281600" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="4" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="4" mimeType="video/mp4" codecs="avc1.64001e" bandwidth="219000" width="640" height="360" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="144144" />
+						<S d="174174" />
+						<S d="166166" />
+						<S d="178178" />
+						<S d="162162" />
+						<S d="163163" />
+						<S d="144144" />
+						<S d="140140" />
+						<S d="164164" />
+						<S d="170170" />
+						<S d="152152" />
+						<S d="124124" />
+						<S d="206206" />
+						<S d="124124" />
+						<S d="152152" />
+						<S d="187187" />
+						<S d="178178" />
+						<S d="152152" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="5" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="5" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="263168" />
+						<S d="320512" />
+						<S d="292864" />
+						<S d="227328" />
+						<S d="228352" />
+						<S d="327680" />
+						<S d="254976" />
+						<S d="223232" />
+						<S d="326656" />
+						<S d="263168" />
+						<S d="221184" />
+						<S d="281600" />
+						<S d="227328" />
+						<S d="315392" />
+						<S d="291840" />
+						<S d="274432" />
+						<S d="349184" />
+						<S d="327680" />
+						<S d="281600" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="6" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="6" mimeType="video/mp4" codecs="avc1.640015" bandwidth="182000" width="426" height="240" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="144144" />
+						<S d="174174" />
+						<S d="166166" />
+						<S d="178178" />
+						<S d="162162" />
+						<S d="163163" />
+						<S d="144144" />
+						<S d="140140" />
+						<S d="164164" />
+						<S d="170170" />
+						<S d="152152" />
+						<S d="124124" />
+						<S d="174174" />
+						<S d="156156" />
+						<S d="151151" />
+						<S d="188188" />
+						<S d="178178" />
+						<S d="152152" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="7" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="7" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="263168" />
+						<S d="320512" />
+						<S d="292864" />
+						<S d="227328" />
+						<S d="228352" />
+						<S d="327680" />
+						<S d="254976" />
+						<S d="223232" />
+						<S d="326656" />
+						<S d="263168" />
+						<S d="221184" />
+						<S d="281600" />
+						<S d="227328" />
+						<S d="315392" />
+						<S d="291840" />
+						<S d="274432" />
+						<S d="349184" />
+						<S d="327680" />
+						<S d="281600" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="8" contentType="video" segmentAlignment="true" bitstreamSwitching="true" lang="und">
+			<Representation id="8" mimeType="video/mp4" codecs="avc1.64000c" bandwidth="156000" width="256" height="144" frameRate="24000/1001">
+				<SegmentTemplate timescale="24000" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="144144" />
+						<S d="174174" />
+						<S d="159159" />
+						<S d="124124" r="1" />
+						<S d="178178" />
+						<S d="139139" />
+						<S d="121121" />
+						<S d="178178" />
+						<S d="143143" />
+						<S d="120120" />
+						<S d="153153" />
+						<S d="124124" />
+						<S d="171171" />
+						<S d="159159" />
+						<S d="149149" />
+						<S d="190190" />
+						<S d="178178" />
+						<S d="152152" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="9" contentType="audio" segmentAlignment="true" bitstreamSwitching="true" lang="eng">
+			<Representation id="9" mimeType="audio/mp4" codecs="mp4a.40.2" bandwidth="64000" audioSamplingRate="44100">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+				<SegmentTemplate timescale="44100" initialization="The Godfather_init_$RepresentationID$.m4s" media="The Godfather_chunk_$RepresentationID$_$Number%05d$.m4s" startNumber="1">
+					<SegmentTimeline>
+						<S t="0" d="263168" />
+						<S d="320512" />
+						<S d="292864" />
+						<S d="227328" />
+						<S d="228352" />
+						<S d="327680" />
+						<S d="254976" />
+						<S d="223232" />
+						<S d="326656" />
+						<S d="263168" />
+						<S d="221184" />
+						<S d="281600" />
+						<S d="227328" />
+						<S d="315392" />
+						<S d="291840" />
+						<S d="274432" />
+						<S d="349184" />
+						<S d="327680" />
+						<S d="281600" />
+					</SegmentTimeline>
+				</SegmentTemplate>
+			</Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>
